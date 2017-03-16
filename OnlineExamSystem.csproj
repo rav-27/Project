@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80A27E5C-CC1A-48F8-A66F-ADE587BA394B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineExamSystem</RootNamespace>
+    <AssemblyName>OnlineExamSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.ReportConverter.ActiveReports">
+      <HintPath>E:\dll\Telerik.ReportConverter.ActiveReports.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportConverter.CrystalReports">
+      <HintPath>E:\dll\Telerik.ReportConverter.CrystalReports.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportConverter.XtraReports">
+      <HintPath>E:\dll\Telerik.ReportConverter.XtraReports.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting">
+      <HintPath>E:\dll\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Adomd">
+      <HintPath>E:\dll\Telerik.Reporting.Adomd.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Cache.Database">
+      <HintPath>E:\dll\Telerik.Reporting.Cache.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Design">
+      <HintPath>E:\dll\Telerik.Reporting.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Design.Components">
+      <HintPath>E:\dll\Telerik.Reporting.Design.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Design.GraphConverters">
+      <HintPath>E:\dll\Telerik.Reporting.Design.GraphConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Design.GraphWizard">
+      <HintPath>E:\dll\Telerik.Reporting.Design.GraphWizard.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Design.VisualStudio">
+      <HintPath>E:\dll\Telerik.Reporting.Design.VisualStudio.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.OpenXmlRendering">
+      <HintPath>E:\dll\Telerik.Reporting.OpenXmlRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Service">
+      <HintPath>E:\dll\Telerik.Reporting.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Services.WebApi">
+      <HintPath>E:\dll\Telerik.Reporting.Services.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.XpsRendering">
+      <HintPath>E:\dll\Telerik.Reporting.XpsRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.Mvc">
+      <HintPath>E:\dll\Telerik.ReportViewer.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WebForms">
+      <HintPath>E:\dll\Telerik.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WebForms.Design">
+      <HintPath>E:\dll\Telerik.ReportViewer.WebForms.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms">
+      <HintPath>E:\dll\Telerik.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms.Design">
+      <HintPath>E:\dll\Telerik.ReportViewer.WinForms.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.Wpf">
+      <HintPath>E:\dll\Telerik.ReportViewer.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.Wpf.Design">
+      <HintPath>E:\dll\Telerik.ReportViewer.Wpf.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="telerik.web.ui, Version=2010.2.713.20, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\dll\telerik.web.ui.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddQueinstructor.aspx" />
+    <Content Include="AddSubject.aspx" />
+    <Content Include="Admin.Master">
+      <BrowseToURL>~/Admin.Master</BrowseToURL>
+    </Content>
+    <Content Include="AdminHome.aspx" />
+    <Content Include="ChangePwd.aspx" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap-reset.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\front-style.css" />
+    <Content Include="css\helper.css" />
+    <Content Include="css\jquery-ui-1.9.2.custom.css" />
+    <Content Include="css\regsheet.css" />
+    <Content Include="css\styles.min.css" />
+    <Content Include="Homepage.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\app.min.js" />
+    <Content Include="js\common.min.js" />
+    <Content Include="js\index.js" />
+    <Content Include="css\ionicons.min.css" />
+    <Content Include="css\jquery.dataTables.css" />
+    <Content Include="css\material-design-iconic-font.min.css" />
+    <Content Include="css\morris.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\sweet-alert.min.css" />
+    <Content Include="ExamDetailsInstructor.aspx" />
+    <Content Include="ForgotPwd.aspx" />
+    <Content Include="image\favicon_1.ico" />
+    <Content Include="Instructor.Master" />
+    <Content Include="InstructorDetailsAdmin.aspx" />
+    <Content Include="InstructorHome.aspx" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\html5placeholder.jquery.js" />
+    <Content Include="js\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="js\jquery.app.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.nicescroll.js" />
+    <Content Include="js\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="js\jstz.min.js" />
+    <Content Include="js\pace.min.js" />
+    <Content Include="js\regjs.js" />
+    <Content Include="js\ui.min.js" />
+    <Content Include="js\wow.min.js" />
+    <Content Include="OPBasedQP.aspx" />
+    <Content Include="OPBasedscore.aspx" />
+    <Content Include="pictures\bd1.jpg" />
+    <Content Include="pictures\bd2.jpg" />
+    <Content Include="pictures\em2.gif" />
+    <Content Include="pictures\hill.jpg" />
+    <Content Include="pictures\hill1.jpg" />
+    <Content Include="pictures\imag1.jpg" />
+    <Content Include="pictures\ImageToProceed.jpg" />
+    <Content Include="pictures\img0.gif" />
+    <Content Include="pictures\IMG10.jpg" />
+    <Content Include="pictures\IMG11.jpg" />
+    <Content Include="pictures\img12.jpg" />
+    <Content Include="pictures\img13.jpg" />
+    <Content Include="pictures\img14.jpg" />
+    <Content Include="pictures\img15.jpg" />
+    <Content Include="pictures\img16.jpg" />
+    <Content Include="pictures\img17.jpg" />
+    <Content Include="pictures\img18.jpg" />
+    <Content Include="pictures\img19.jpg" />
+    <Content Include="pictures\img2.jpg" />
+    <Content Include="pictures\img20.JPG" />
+    <Content Include="pictures\img21.jpg" />
+    <Content Include="pictures\img22.jpg" />
+    <Content Include="pictures\img23.jpg" />
+    <Content Include="pictures\img24.jpg" />
+    <Content Include="pictures\img25.jpg" />
+    <Content Include="pictures\img26.jpg" />
+    <Content Include="pictures\img27.jpg" />
+    <Content Include="pictures\img28.jpg" />
+    <Content Include="pictures\img29.jpg" />
+    <Content Include="pictures\img3.jpg" />
+    <Content Include="pictures\img30.jpg" />
+    <Content Include="pictures\img31.jpg" />
+    <Content Include="pictures\img32.jpg" />
+    <Content Include="pictures\img33.jpg" />
+    <Content Include="pictures\img34.jpg" />
+    <Content Include="pictures\img35.jpg" />
+    <Content Include="pictures\img38.jpg" />
+    <Content Include="pictures\img39.jpg" />
+    <Content Include="pictures\img4.jpg" />
+    <Content Include="pictures\img5.jpg" />
+    <Content Include="pictures\img6.jpg" />
+    <Content Include="pictures\img7.jpg" />
+    <Content Include="pictures\img8.jpg" />
+    <Content Include="pictures\img9.jpg" />
+    <Content Include="pictures\ph3.jpg" />
+    <Content Include="QueInstructor.aspx" />
+    <Content Include="QuestionsPage.aspx" />
+    <Content Include="questionupds.aspx" />
+    <Content Include="RegAck.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="ResultsInstructor.aspx" />
+    <Content Include="StudentDetailsAdmin.aspx" />
+    <Content Include="StudentDetailsInstructor.aspx" />
+    <Content Include="StudentHome.aspx" />
+    <Content Include="Toproceed.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddQueinstructor.aspx.cs">
+      <DependentUpon>AddQueinstructor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddQueinstructor.aspx.designer.cs">
+      <DependentUpon>AddQueinstructor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubject.aspx.cs">
+      <DependentUpon>AddSubject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSubject.aspx.designer.cs">
+      <DependentUpon>AddSubject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\clsConn.cs" />
+    <Compile Include="ChangePwd.aspx.cs">
+      <DependentUpon>ChangePwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePwd.aspx.designer.cs">
+      <DependentUpon>ChangePwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="DropDownBind.cs" />
+    <Compile Include="ExamDetailsInstructor.aspx.cs">
+      <DependentUpon>ExamDetailsInstructor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamDetailsInstructor.aspx.designer.cs">
+      <DependentUpon>ExamDetailsInstructor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPwd.aspx.cs">
+      <DependentUpon>ForgotPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPwd.aspx.designer.cs">
+      <DependentUpon>ForgotPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor.Master.cs">
+      <DependentUpon>Instructor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instructor.Master.designer.cs">
+      <DependentUpon>Instructor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorDetailsAdmin.aspx.cs">
+      <DependentUpon>InstructorDetailsAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstructorDetailsAdmin.aspx.designer.cs">
+      <DependentUpon>InstructorDetailsAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorHome.aspx.cs">
+      <DependentUpon>InstructorHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstructorHome.aspx.designer.cs">
+      <DependentUpon>InstructorHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OPBasedQP.aspx.cs">
+      <DependentUpon>OPBasedQP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OPBasedQP.aspx.designer.cs">
+      <DependentUpon>OPBasedQP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OPBasedscore.aspx.cs">
+      <DependentUpon>OPBasedscore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OPBasedscore.aspx.designer.cs">
+      <DependentUpon>OPBasedscore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueInstructor.aspx.cs">
+      <DependentUpon>QueInstructor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QueInstructor.aspx.designer.cs">
+      <DependentUpon>QueInstructor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionsPage.aspx.cs">
+      <DependentUpon>QuestionsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuestionsPage.aspx.designer.cs">
+      <DependentUpon>QuestionsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="questionupds.aspx.cs">
+      <DependentUpon>questionupds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="questionupds.aspx.designer.cs">
+      <DependentUpon>questionupds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegAck.aspx.cs">
+      <DependentUpon>RegAck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegAck.aspx.designer.cs">
+      <DependentUpon>RegAck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResultsInstructor.aspx.cs">
+      <DependentUpon>ResultsInstructor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResultsInstructor.aspx.designer.cs">
+      <DependentUpon>ResultsInstructor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SQLConnClass.cs" />
+    <Compile Include="StudentDetailsAdmin.aspx.cs">
+      <DependentUpon>StudentDetailsAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentDetailsAdmin.aspx.designer.cs">
+      <DependentUpon>StudentDetailsAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDetailsInstructor.aspx.cs">
+      <DependentUpon>StudentDetailsInstructor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentDetailsInstructor.aspx.designer.cs">
+      <DependentUpon>StudentDetailsInstructor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentHome.aspx.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentHome.aspx.designer.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMaster.Master.cs">
+      <DependentUpon>StudentMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentMaster.Master.designer.cs">
+      <DependentUpon>StudentMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Toproceed.aspx.cs">
+      <DependentUpon>Toproceed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Toproceed.aspx.designer.cs">
+      <DependentUpon>Toproceed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Home.Master" />
+    <Content Include="StudentMaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fonts\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1180/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

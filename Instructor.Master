@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Instructor.master.cs" Inherits="OnlineExamSystem.Instructor" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title> Online Examination Page </title>
+</head>
+<body background="pictures/img26.jpg">
+<form id="form1" runat="server">
+<div>
+<asp:Image ID="Image1" runat="server" Height="120px" ImageUrl="~/pictures/img9.jpg"
+Style="z-index: 100; left: 680px; position: absolute; top: 32px" Width="296px" />
+<asp:Image ID="Image4" runat="server" Height="32px" ImageUrl="~/pictures/img29.jpg"
+Style="z-index: 101; left: 0px; position: absolute; top: 0px" Width="968px" />
+<asp:Image ID="Image3" runat="server" Height="120px" ImageUrl="~/pictures/img15.jpg"
+Style="z-index: 102; left: 0px; position: absolute; top: 32px" Width="296px" />
+<asp:Image ID="Image2" runat="server" Height="64px" ImageUrl="~/pictures/IMG10.jpg"
+Style="z-index: 103; left: 392px; position: absolute; top: 32px" Width="192px" />
+&nbsp;<br />
+<br />
+<asp:Menu ID="Menu1" runat="server" Height="32px" OnMenuItemClick="Menu1_MenuItemClick"
+Orientation="Horizontal" Style="z-index: 104; left: -6px; position: absolute; top: 152px"
+Width="960px" BackColor="Silver" Font-Bold="True" Font-Names="Garamond" ForeColor="DarkOliveGreen">
+<Items>
+<asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/InstructorHome.aspx" ></asp:MenuItem> 
+  
+<asp:MenuItem Text="Student Details" Value="Student Details" NavigateUrl="~/StudentDetailsInstructor.aspx"></asp:MenuItem>
+
+<%--<asp:MenuItem Text="Exam Details" Value="Exam Details" NavigateUrl="~/ExamDetailsinstructor.aspx"></asp:MenuItem>--%>
+
+<asp:MenuItem Text="Add Questions" Value="Questions">
+<asp:MenuItem Text="Add Questions" Value="Add Questions" NavigateUrl="~/AddQueinstructor.aspx"></asp:MenuItem>
+</asp:MenuItem>
+
+
+
+<asp:MenuItem Text="Update Questions" Value="Update">
+
+<asp:MenuItem Text="Update Questions" Value="Add Questions" NavigateUrl="~/questionupds.aspx"></asp:MenuItem>
+</asp:MenuItem>
+
+
+
+<asp:MenuItem Text="Results " Value="Results " NavigateUrl="~/resultsinstructor.aspx"></asp:MenuItem>
+
+<asp:MenuItem Text="Log Out" Value="Log Out" NavigateUrl="~/Index.aspx"></asp:MenuItem>
+</Items>
+</asp:Menu>
+<br />
+ <strong><span style="font-size: 24pt; font-family: Monotype Corsiva">
+<span
+style="color: darkslategray">Exam Instructor</span>
+&nbsp;&nbsp;<span style="color: #006666"><br />
+</span></span></strong>
+<br />
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+<br />
+</asp:ContentPlaceHolder>
+</div>
+</form>
+</body>
+</html>

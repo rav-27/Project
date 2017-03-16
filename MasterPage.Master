@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="OnlineExamSystem.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Online Examination Page</title>
+</head>
+<body background="pictures/img35.jpg">
+    <form id="form1" runat="server">
+    <div>
+        <br />
+       <span style="font-size: 24pt; color: darkslategray; font-family: Monotype Corsiva">
+            <strong>Online Examination<br />
+            </strong></span>
+        <br />
+         <asp:Image ID="Image3" runat="server" Height="104px" ImageUrl="~/pictures/img18.jpg"
+                Style="z-index: 100; left: 0px; position: absolute; top: 0px" Width="176px" />
+            <asp:Image ID="Image4" runat="server" Height="104px" ImageUrl="~/pictures/img4.jpg"
+                Style="z-index: 101; left: 756px; position: absolute; top: 0px" Width="216px" />
+        &nbsp;
+        <asp:Image ID="Image2" runat="server" Height="96px" ImageUrl="~/pictures/img20.JPG"
+            Style="z-index: 103; left: 320px; position: absolute; top: 152px" Width="256px" />
+        <br />
+        <asp:Image ID="Image1" runat="server" Height="32px" ImageUrl="~/pictures/img19.jpg"
+            Style="z-index: 104; left: 176px; position: absolute; top: 0px" Width="576px" />
+       
+       
+        <asp:Menu ID="Menu1" runat="server" BackColor="SteelBlue" Font-Bold="True" Font-Italic="False"
+            Font-Names="Microsoft Sans Serif" ForeColor="#400000" Height="24px" Orientation="Horizontal"
+            Style="z-index: 105; left: 0px; position: absolute; top: 128px" Width="960px">
+            <Items>
+                <asp:MenuItem Text="Home" Value="home" NavigateUrl="~/home.aspx"></asp:MenuItem>               
+            </Items>
+            
+        </asp:Menu>
+        <br />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">    
+        <br />        
+         </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

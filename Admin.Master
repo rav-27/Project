@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="OnlineExamSystem.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Online Exam System </title>
+</head>
+<body background="pictures/img30.jpg">
+    <form id="form1" runat="server">
+        <div>
+         &nbsp;   <br />
+            <strong><span style="font-size: 24pt; color: #ff9933; font-family: Monotype Corsiva; z-index: 1; left: 326px; top: 32px; position: absolute;">Exam Administrator<br />
+            </span></strong>
+            <br />
+            <asp:Image ID="Image1" runat="server" Height="104px" ImageUrl="~/pictures/IMG11.jpg"
+                Style="z-index: 100; left: 0px; position: absolute; top: 0px" Width="216px" />
+            <asp:Menu ID="Menu1" runat="server" BackColor="Peru" Font-Bold="True" Font-Names="Franklin Gothic Demi"
+                ForeColor="WhiteSmoke" Height="24px" Orientation="Horizontal" Style="z-index: 101; left: 0px; position: absolute; top: 104px"
+                Width="960px">
+                <Items>
+                    <asp:MenuItem Text="Home" NavigateUrl="~/AdminHome.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Student Details" NavigateUrl="~/StudentDetailsAdmin.aspx"></asp:MenuItem>
+                 <%--   <asp:MenuItem Text="Exam Details" NavigateUrl="~/ExamDetailsdmin.aspx"></asp:MenuItem>--%>
+                    <asp:MenuItem Text="Instructor Details" NavigateUrl="~/InstructorDetailsAdmin.aspx"></asp:MenuItem>
+                    
+                    <asp:MenuItem Text="Log Out" NavigateUrl="~/Index.aspx" ></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/pictures/img25.jpg"
+                Style="z-index: 102; left: 638px; position: absolute; top: 0px; height: 95px; width: 330px;" />
+            <br />
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+</body>
+</html>
